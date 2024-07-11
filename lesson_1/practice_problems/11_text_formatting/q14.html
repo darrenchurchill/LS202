@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+JS202 Lesson 1
+Assignment 11 Practice Problems
+Text Formatting
+Question 14
+
+Using the provided html, style the text to match the given screenshot.
+
+The font highlighted in yellow is `Courier`; uses a backup font of `monospace`.
+The text uses four font sizes - `12px`, `15px`, `18px`, and `20px`.
+-->
+<html lang="en">
+  <head>
+    <title>Practice Problems: Text Formatting</title>
+    <meta charset="utf-8">
+    <style>
+      mark {
+        background-color: yellow;
+        font-family: Courier, monospace;
+        font-size: 12px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      strong {
+        font-size: 15px;
+        font-weight: bold;
+      }
+
+      em {
+        font-size: 20px;
+        font-style: italic;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <p>That episode was <mark>un<strong>be<em>lieve</em></strong>able</mark>!</p>
+  </body>
+</html>
