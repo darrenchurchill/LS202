@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+JS202 Lesson 2
+Assignment 8 Practice Problems
+Spacing and Dimensions
+Question 7
+
+Add 20 pixels padding to all four sides of the red `div`. Notice the different
+widths again. Add a CSS property to both elements to ensure the total width for
+each is `300px` rather than `300px` and then some.
+-->
+<html lang="en-US">
+  <head>
+    <title>Spacing and Dimensions</title>
+    <meta charset="utf-8">
+    <style>
+      div {
+        box-sizing: border-box;
+        height: 300px;
+        width: 300px;
+        background-color: #ccf;
+      }
+
+      div:first-of-type {
+        background-color: #fcc;
+        padding: 20px;
+      }
+
+      div:nth-of-type(2) {
+        border: 5px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <div></div>
+  </body>
+</html>
