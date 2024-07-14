@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+JS202 Lesson 2
+Assignment 8 Practice Problems
+Spacing and Dimensions
+Question 6
+
+Add a 5-pixel solid black border to the blue `div`. Compare the widths of the
+two boxes. Why is the blue box a different size?
+-->
+<html lang="en-US">
+  <head>
+    <title>Spacing and Dimensions</title>
+    <meta charset="utf-8">
+    <style>
+      div {
+        height: 300px;
+        width: 300px;
+        background-color: #ccf;
+      }
+
+      div:first-of-type {
+        background-color: #fcc;
+      }
+
+      div:nth-of-type(2) {
+        border: 5px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <div></div>
+    <h1>Solution</h1>
+    <p>
+      The blue box is a different size because the default `content-box`
+      `box-sizing` model doesn't consider the border as part of the element's
+      width. Therefore, the border thickness is added to the element width, and
+      the blue box with a border is larger than the red box without a border.
+    </p>
+  </body>
+</html>
