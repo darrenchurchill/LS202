@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+JS202 Lesson 5
+Assignment 7 Practice Problems
+Forms
+Question 7
+
+Create a search form with three items:
+
+1. a field for the search term
+2. a group of three controls to select precisely one form the list "TV",
+   "Movies", and "Music"
+3. a Search button (use the `button` tag, not the obsolete `<input
+   type="button">` tag.)
+
+The form doesn't have to do anything when submitted. Don't use a description
+list for this problem.
+-->
+<html lang="en-US">
+  <head>
+    <title>Forms</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <form action="#" method="get">
+      <fieldset>
+        <label for="query">Search for</label>
+        <input type="text" name="query" id="query">
+
+        <input type="radio" name="category" id="TV" value="TV">
+        <label for="TV">TV</label>
+
+        <input type="radio" name="category" id="movies" value="movies">
+        <label for="movies">Movies</label>
+
+        <input type="radio" name="category" id="music" value="music">
+        <label for="music">Music</label>
+
+        <button>Search</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
