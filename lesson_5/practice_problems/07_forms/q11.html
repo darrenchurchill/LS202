@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--
+JS202 Lesson 5
+Assignment 7 Practice Problems
+Forms
+Question 11
+
+Create a form that filters news articles by a single category and any number of
+selected tag words. Use radio buttons for the news category and checkboxes for
+the tags. Make sure you use the `get` method to allow the user to save and share
+the filtered URL.
+
+- Categories: Core, Plugins and Libraries, Conventions, Reviews, Opinion, People
+- Tags: HTML, CSS, Javascript, Ruby, Rails, Python, Django
+
+For this problem, use the container-style `label` tag (without the `for`
+attribute). Use an unordered list instead of a description list for both the
+categories and tags.
+-->
+<html lang="en-US">
+  <head>
+    <title>Forms</title>
+    <meta charset="utf-8">
+    <style>
+      ul {
+        padding: 0;
+        margin: 0;
+      }
+
+      ul li {
+        list-style-type: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#" method="get">
+      <fieldset>
+        <legend>Select a news category</legend>
+        <ul>
+          <li>
+            <label>
+              <input type="radio" name="category" value="core">
+              Core
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="category" value="plugins and libraries">
+              Plugins and Libraries
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="category" value="conventions">
+              Conventions
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="category" value="reviews">
+              Reviews
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="category" value="opinion">
+              Opinion
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="category" value="people">
+              People
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Select news tag(s)</legend>
+        <ul>
+          <li>
+            <input type="checkbox" name="html" id="html">
+            <label for="htmL">HTML</label>
+          </li>
+          <li>
+            <input type="checkbox" name="css" id="css">
+            <label for="css">CSS</label>
+          </li>
+          <li>
+            <input type="checkbox" name="javascript" id="javascript">
+            <label for="javascript">JavaScript</label>
+          </li>
+          <li>
+            <input type="checkbox" name="ruby" id="ruby">
+            <label for="ruby">Ruby</label>
+          </li>
+          <li>
+            <input type="checkbox" name="rails" id="rails">
+            <label for="rails">Rails</label>
+          </li>
+          <li>
+            <input type="checkbox" name="python" id="python">
+            <label for="python">Python</label>
+          </li>
+          <li>
+            <input type="checkbox" name="django" id="django">
+            <label for="django">Django</label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <button>Filter</button>
+    </form>
+  </body>
+</html>
