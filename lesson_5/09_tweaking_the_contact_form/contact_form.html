@@ -20,14 +20,14 @@
         <input type="email" name="email" autocomplete="email"
                placeholder="Ex: username@domain.com" required>
       </label>
-      <label>
+      <label class="address">
         City
         <input type="text" name="city" autocomplete="address-level2" required>
       </label>
-      <label>
+      <label class="address">
         State
         <select name="state" autocomplete="address-level1" required>
-          <option value="" selected disabled>Select one</option>
+          <option value="" selected disabled></option>
           <option>AK</option>
           <option>AL</option>
           <option>AR</option>
@@ -81,7 +81,7 @@
           <option>WY</option>
         </select>
       </label>
-      <label>
+      <label class="address">
         Zip Code
         <input type="text" name="zipcode" autocomplete="postal-code"
                placeholder="Ex: 94536" minlength="5" maxlength="5" required>

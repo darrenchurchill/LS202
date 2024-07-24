@@ -20,7 +20,8 @@ fieldset {
   border: none;
 }
 
-.name {
+.name,
+.address {
   display: inline-block;
   box-sizing: border-box;
   width: 50%;
@@ -30,6 +31,16 @@ fieldset {
 .name + .name {
   padding-right: 0;
   padding-left: 1em;
+}
+
+.address + .address {
+  padding-left: 1em;
+  width: 10%;
+}
+
+.address + .address + .address {
+  padding-right: 0;
+  width: 40%;
 }
 
 label, legend {
@@ -72,7 +83,12 @@ button {
 
 select {
   width: auto;
-  font-size: revert;
+  appearance: none;
+  border-radius: 0;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='20' viewBox='0 0 20 20' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 1px;
 }
 
 textarea {
