@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!--
+JS202 Lesson 6
+Assignment 6 Practice Problems
+Positioning
+Question 4
+
+Place a new element between the page contents and the yellow item; by between,
+we mean in a 3D sense. Consider the page content to be at the bottom of a stack
+and the yellow at the top; place the new element between the two.
+
+The new element should take up the full width and height of the page. Use the
+CSS below to get started; note that it sets the background to a translucent
+color. The new element should fill the browser's entire window, and it should
+appear in front of the paragraphs but behind the yellow box.
+-->
+<html lang="en-US">
+  <head>
+    <title>Positioning</title>
+    <meta charset="utf-8">
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+
+      header {
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.6);
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+      }
+
+      section {
+        border: 10px solid #cacaca;
+        z-index: 0;
+      }
+
+      aside {
+        background-color: #fbfcc8;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        padding: 1rem;
+        margin: auto;
+        width: 400px;
+        box-sizing: border-box;
+        z-index: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <p>
+        I'm positioned between the <code>section</code> and <code>aside</code>
+        elements!
+      </p>
+    </header>
+    <section>
+      <p>
+        Sed pulvinar lacinia iaculis. Praesent vitae tellus blandit, ultrices
+        velit sed, eleifend orci. Nam convallis pharetra nibh, sed egestas
+        neque accumsan a. Pellentesque tellus neque, viverra et orci ut,
+        pellentesque tristique quam. Fusce at consectetur nibh, et mollis
+        tellus. Aliquam molestie, ipsum ut condimentum scelerisque, mi nisl
+        ultricies nunc, dictum tempus erat est vel eros. Aenean sollicitudin
+        ipsum non sapien viverra, non feugiat ipsum ullamcorper. Suspendisse
+        metus lacus, hendrerit ut fermentum id, bibendum non est. Pellentesque
+        maximus magna a nibh faucibus rutrum. Nunc lacinia nisi eget lectus
+        tincidunt mattis. Pellentesque tincidunt bibendum bibendum. Aliquam
+        erat volutpat. Maecenas vitae tristique lectus. Duis sollicitudin
+        dolor luctus dolor ultrices elementum.
+      </p>
+
+      <p>
+        Ut eu nibh molestie, pellentesque urna quis, mattis massa. Praesent
+        cursus scelerisque cursus. Etiam blandit mauris nisl, in eleifend ex
+        imperdiet vel. Sed cursus lacus pellentesque dui venenatis, ut
+        sollicitudin felis iaculis. Cras vestibulum sodales sagittis. Cras eu
+        sagittis risus. Proin nec eros a libero tempor pulvinar. Etiam ex
+        lacus, ultrices in mollis quis, congue quis libero.
+      </p>
+
+      <p>
+        Cras vel nulla massa. Curabitur mollis augue eu scelerisque molestie.
+        Etiam consectetur elit odio, vel maximus elit pulvinar ac. Curabitur
+        tincidunt quam sit amet justo cursus cursus. Mauris eget dapibus dui.
+        Ut lorem ligula, bibendum quis turpis sit amet, facilisis placerat
+        nisl. Nulla venenatis nunc et est pulvinar accumsan. Suspendisse
+        viverra massa a ultricies sodales. Praesent imperdiet dignissim libero
+        at euismod. Mauris rutrum neque lorem, eleifend dignissim dui
+        fringilla sit amet.
+      </p>
+
+      <p>
+        Nam enim turpis, rutrum tristique est a, tristique viverra elit.
+        Phasellus tempus est eget erat convallis lobortis. Ut aliquet nisl
+        quis luctus porta. Integer vitae tempor nisi, id efficitur velit.
+        Aliquam aliquam felis nec velit pulvinar sagittis. Aliquam erat
+        volutpat. Quisque facilisis dapibus neque, ut finibus dui rhoncus
+        quis. Pellentesque vel interdum sapien, feugiat lobortis est. Donec
+        varius semper gravida. Donec quis vestibulum magna. Donec tristique
+        lorem massa, eu aliquam massa hendrerit non.
+      </p>
+
+      <p>
+        Duis tincidunt velit quis nulla viverra, quis suscipit est maximus. Integer
+        interdum dictum ante ac gravida. Pellentesque sed mauris suscipit, tincidunt
+        massa id, tincidunt sapien. Nam non risus dictum, tempus libero vitae, mattis
+        enim. Phasellus varius, risus in lobortis consequat, elit orci vehicula elit,
+        tincidunt molestie lacus nisi gravida ipsum. Quisque dapibus quam at odio
+        faucibus elementum. Nam libero diam, viverra vitae nisi id, vestibulum laoreet
+        orci. Morbi quis rhoncus odio.
+      </p>
+    </section>
+
+    <aside>
+      <p>
+        I'm positioned!
+      </p>
+    </aside>
+  </body>
+</html>
