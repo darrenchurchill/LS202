@@ -88,7 +88,8 @@ figure p {
   border: 3px solid #006300;
 }
 
-#block-elements figure {
+#block-elements figure,
+#inline-block-elements figure {
   width: 100%;
   border: none;
   padding: 0;
@@ -96,7 +97,8 @@ figure p {
 }
 
 #block-elements div,
-#block-elements a {
+#block-elements a,
+#inline-block-elements a {
   color: white;
   background-color: #228ffc;
 }
@@ -166,4 +168,34 @@ figure p {
 
 #block-float-width-and-height div + div {
   width: 50%;
+}
+
+#inline-block-elements {
+  border-bottom: 2px dashed #545454;
+  padding-bottom: 3em;
+}
+
+#inline-block-elements figure {
+  margin: 3rem 0;
+}
+
+#inline-block-elements figure ul {
+  padding: 0;
+  margin: auto;
+  width: max-content;
+}
+
+#inline-block-elements figure li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+#inline-block-elements figure a {
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+  height: 4em;
+  width: 11.5em;
+  padding: 1.5em 0;
+  margin: 0 0.5em;
 }
