@@ -55,3 +55,35 @@ figure p {
   line-height: 1em;
 }
 
+#inline-margin a {
+  margin: 30px;
+}
+
+#inline-padding {
+  font-size: 0;
+}
+
+#inline-padding p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+#inline-padding a,
+#inline-floating a {
+  padding: 30px;
+  color: white;
+  background-color: #007f01;
+}
+
+#inline-floating {
+  padding-top: 0;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+
+#inline-floating a {
+  float: left;
+  box-sizing: border-box;
+  margin: 45px 15px;
+  border: 3px solid #006300;
+}
