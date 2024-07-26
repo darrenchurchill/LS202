@@ -39,6 +39,12 @@ a {
   color: inherit;
 }
 
+ul {
+  margin-left: 3em;
+  margin-bottom: 3em;
+  line-height: 1.75em;
+}
+
 code, pre {
   font-size: 1rem;
   padding: 1em 0;
@@ -196,6 +202,7 @@ figure p {
   display: inline-block;
   box-sizing: border-box;
   text-align: center;
+  line-height: 1em;
   height: 4em;
   width: 11.5em;
   padding: 1.5em 0;
@@ -231,4 +238,50 @@ figure p {
   background-color: #2d8a56;
   width: 100%;
   padding: 1em;
+}
+
+#fixed div,
+#relative div,
+#absolute div {
+  color: white;
+  width: min-content;
+  text-align: center;
+  padding: 1.5em 4.5em;
+  border-radius: 10px;
+}
+
+#fixed div {
+  position: fixed;
+  bottom: 3em;
+  left: 2em;
+  background-color: #228ffc;
+  z-index: 1;
+}
+
+#relative div {
+  width: max-content;
+  position: relative;
+  top: 2.5em;
+  right: 5.5em;
+  background-color: #fc6346;
+  z-index: 2;
+}
+
+#absolute {
+  position: relative;
+}
+
+#absolute div {
+  width: 7em;
+  padding: 1.5em 3em;
+  position: absolute;
+  bottom: 9em;
+  left: 14em;
+  background-color: #007f01;
+}
+
+#floats-and-positioning h2:last-of-type,
+#floats-and-positioning h2:last-of-type ~ * {
+  position: relative;
+  z-index: 2;
 }
