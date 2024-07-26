@@ -31,7 +31,7 @@ h3 {
 
 p {
   line-height: 2.2em;
-  margin: 0;
+  margin: 1.5em 0;
 }
 
 a {
@@ -39,8 +39,9 @@ a {
   color: inherit;
 }
 
-code {
+code, pre {
   font-size: 1rem;
+  padding: 1em 0;
 }
 
 figure {
@@ -89,7 +90,8 @@ figure p {
 }
 
 #block-elements figure,
-#inline-block-elements figure {
+#inline-block-elements figure,
+#floats-and-positioning figure {
   width: 100%;
   border: none;
   padding: 0;
@@ -198,4 +200,35 @@ figure p {
   width: 11.5em;
   padding: 1.5em 0;
   margin: 0 0.5em;
+}
+
+#floats-and-positioning h1:first-of-type {
+  text-align: center;
+}
+
+#floats::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+#floats div {
+  float: left;
+  box-sizing: border-box;
+  width: 50%;
+  padding: 2.5em;
+  color: white;
+  background-color: #fc6346;
+  text-align: center;
+  font-weight: bold;
+}
+
+#floats div + div {
+  background-color: #228ffc;
+}
+
+#floats div + div + div {
+  background-color: #2d8a56;
+  width: 100%;
+  padding: 1em;
 }
