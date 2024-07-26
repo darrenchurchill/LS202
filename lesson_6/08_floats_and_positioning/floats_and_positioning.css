@@ -95,9 +95,17 @@ figure p {
   margin: 1.5rem 0;
 }
 
-#block-no-width-height div {
+#block-elements div,
+#block-elements a {
   color: white;
   background-color: #228ffc;
+}
+
+#block-elements a {
+  display: block;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
 }
 
 #block-height-only div {
@@ -123,4 +131,39 @@ figure p {
   height: 120px;
   padding: 20px;
   margin: 20px;
+}
+
+#block-float-no-width-height,
+#block-float-width-and-height {
+  overflow: hidden;
+}
+
+#block-float-no-width-height div,
+#block-float-width-and-height div {
+  float: left;
+}
+
+#block-float-no-width-height div + div,
+#block-float-width-and-height div + div {
+  float: right;
+}
+
+#block-float-no-width-height div {
+  border: 1px solid #fc6346;
+}
+
+#block-float-no-width-height div + div,
+#block-float-width-and-height div:first-of-type {
+  background-color: #fc6346;
+}
+
+#block-float-width-and-height div {
+  box-sizing: border-box;
+  width: 40%;
+  padding: 1.5em;
+  text-align: center;
+}
+
+#block-float-width-and-height div + div {
+  width: 50%;
 }
