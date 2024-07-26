@@ -60,6 +60,7 @@ figure {
 
 figure p {
   line-height: 1em;
+  margin: 0;
 }
 
 #inline-margin a {
