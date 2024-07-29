@@ -111,8 +111,10 @@ footer {
 }
 
 #copyright {
-  margin: auto 1rem auto auto;
+  margin: 0 1rem;
   grid-area: copyright;
+  justify-self: right;
+  align-self: center;
 }
 
 #logo {
