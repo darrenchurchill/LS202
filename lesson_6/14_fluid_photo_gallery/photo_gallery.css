@@ -1,0 +1,65 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  background-color: #323232;
+  min-width: 500px;
+  max-width: 1000px;
+  box-sizing: border-box;
+  padding: 0.75rem;
+  margin: auto;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "figure"
+    "footer";
+  grid-template-columns: 1fr;
+}
+
+header {
+  grid-area: header;
+  justify-self: center;
+}
+
+figure {
+  grid-area: figure;
+  margin: 0;
+}
+
+figcaption {
+  font-size: 80%;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+footer {
+  grid-area: footer;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  box-sizing: border-box;
+  border: 0.75rem solid white;
+  width: 100%;
+}
+
+footer img {
+  border-width: 2px;
+}
+
+ul {
+  display: flex;
+  gap: 2%;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+  flex: 1;
+}
