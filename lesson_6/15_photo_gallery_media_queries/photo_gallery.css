@@ -51,15 +51,14 @@ footer img {
 }
 
 ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem 2%;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 2cqw;
   padding: 0;
   margin: 0;
 }
 
 li {
   list-style-type: none;
-  flex: 200px;
 }
