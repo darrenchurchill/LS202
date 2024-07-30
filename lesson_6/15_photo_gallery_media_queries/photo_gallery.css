@@ -6,7 +6,6 @@ body {
 
 main {
   background-color: #323232;
-  min-width: 500px;
   max-width: 1000px;
   box-sizing: border-box;
   padding: 0.75rem;
