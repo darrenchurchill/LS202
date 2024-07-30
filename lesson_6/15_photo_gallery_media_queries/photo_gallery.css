@@ -63,6 +63,25 @@ li {
   list-style-type: none;
 }
 
+@media screen and (min-width: 1280px) {
+  main {
+    max-width: 100%;
+    grid-template-areas:
+    "header header"
+    "figure footer";
+    grid-template-columns: 950px 1fr;
+    gap: 0 2rem;
+  }
+
+  ul {
+    grid-template-columns: 1fr;
+  }
+
+  footer img {
+    border-width: 0.5cqw;
+  }
+}
+
 @media screen and (max-width: 900px) {
   ul {
     grid-template-columns: repeat(3, 1fr);
