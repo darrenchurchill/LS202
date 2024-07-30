@@ -52,7 +52,8 @@ footer img {
 
 ul {
   display: flex;
-  gap: 2%;
+  flex-wrap: wrap;
+  gap: 1rem 2%;
   justify-content: space-between;
   padding: 0;
   margin: 0;
@@ -60,5 +61,5 @@ ul {
 
 li {
   list-style-type: none;
-  flex: 1;
+  flex: 200px;
 }
