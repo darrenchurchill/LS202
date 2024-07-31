@@ -1,2 +1,123 @@
 @import url("whitespace-reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 
+html {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+  color: #3d5f6e;
+}
+
+body {
+  background: linear-gradient(#ced8bb, #f9fcf2);
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  box-sizing: border-box;
+  padding: 20px 0;
+  width: 960px;
+  margin: auto;
+}
+
+body > header {
+  grid-area: header;
+  display: grid;
+  grid-template-areas: "heading nav";
+  grid-template-columns: auto 1fr;
+  gap: 6.5rem;
+  padding: 0 1.1rem;
+}
+
+header h1 {
+  grid-area: heading;
+  margin-bottom: 0.5em;
+  color: #193340;
+  background: no-repeat url("images/logo.png");
+  padding: 45px 0px 15px 115px;
+}
+
+header nav {
+  grid-area: nav;
+  align-self: end;
+}
+
+nav ul {
+  display: flex;
+  gap: 5px;
+}
+
+nav li {
+  flex: 1;
+}
+
+nav a {
+  background-color: #f9fcf2;
+  color: #8fa89b;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.65em;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+nav a.active {
+  background-color: #8fa89b;
+  color: #f9fcf2;
+}
+
+main {
+  background-color: #fcfcfc;
+  box-shadow: 0 4px 5px 0px #b3b3b3;
+  grid-area: main;
+  display: grid;
+  grid-template-areas:
+    "banner"
+    "article";
+  gap: 2.2rem;
+  box-sizing: border-box;
+  padding: 30px 30px 55px 30px;
+  width: 100%;
+}
+
+footer {
+  grid-area: footer;
+  font-size: 0.8rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 1.78rem;
+  font-weight: normal;
+  margin-bottom: 0.78em;
+}
+
+p {
+  margin: 1.1em 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+main header {
+  grid-area: banner;
+}
+
+main article {
+  display: flow-root;
+  grid-area: article;
+}
+
+main figure {
+  box-sizing: border-box;
+  width: 330px;
+  float: right;
+  margin-left: 2em;
+}
