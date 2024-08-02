@@ -1,0 +1,90 @@
+@import url("whitespace-reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 20px;
+  color: #030303;
+}
+
+body {
+  background-image: url("images/bg_body.gif");
+  background-color: #2f283f;
+  background-repeat: repeat;
+  width: 1000px;
+  margin: 0 auto 100px auto;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: 500px 715px 115px;
+  place-items: center;
+}
+
+header {
+  grid-area: header;
+  align-self: end;
+  margin-bottom: 90px;
+}
+
+h2 {
+  font-size: 1.87rem;
+  margin-bottom: 0.5em;
+  /* Create a flex container for laying out ::before and ::after content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7em;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: #3d96b0;
+  margin-bottom: 1em;
+}
+
+main {
+  background-color: #fcfcfc;
+  color: #2f283f;
+  grid-area: main;
+  align-self: stretch;
+  padding: 1.3em 4.5em 0 4.5em;
+  display: grid;
+  grid-template-areas:
+    "section1"
+    "section2";
+  place-items: center;
+  text-align: center;
+}
+
+footer {
+  background-color: #e5e5e5;
+  grid-area: footer;
+  place-self: stretch;
+  display: grid;
+  grid-template-areas:
+    ". contactlinks .";
+  grid-template-columns: auto 400px auto;
+  align-items: center;
+}
+
+main section {
+  grid-area: section1;
+}
+
+main section:last-of-type {
+  grid-area: section2;
+}
+
+main h2::before,
+main h2::after {
+  content: "•";
+  font-size: 0.7em;
+}
+
+footer ul {
+  grid-area: contactlinks;
+  display: flex;
+  justify-content: space-between;
+}
