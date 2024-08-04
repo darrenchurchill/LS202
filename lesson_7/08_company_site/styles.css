@@ -68,6 +68,11 @@ a {
   color: inherit;
 }
 
+figcaption {
+  color: #3d58b0;
+  font-size: 1.2em;
+}
+
 main {
   background-color: #fcfcfc;
   grid-area: main;
@@ -121,6 +126,13 @@ main section p {
   margin: auto;
 }
 
+main section ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3em;
+}
+
 main h2::before,
 main h2::after {
   content: "•";
@@ -166,4 +178,17 @@ a.socialbtn img:hover {
 
 #anchor-instagram img {
   object-position: 0 calc(-3 * 46px);
+}
+
+#team {
+  margin: 6.5em 0 7.5em 0;
+}
+
+#team a {
+  text-decoration: none;
+}
+
+#team img {
+  margin-top: 0;
+  margin-bottom: 1.3em;
 }
