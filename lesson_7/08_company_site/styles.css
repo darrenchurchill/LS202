@@ -88,3 +88,27 @@ footer ul {
   display: flex;
   justify-content: space-between;
 }
+
+a.socialbtn img {
+  object-fit: none;
+  object-position: 0 0;
+  width: 46px;
+  height: 46px;
+}
+
+a.socialbtn img:hover {
+  /* Safari wasn't always showing the pointer cursor when hovering */
+  cursor: pointer;
+}
+
+#anchor-facebook img {
+  object-position: 0 calc(-1 * 46px);
+}
+
+#anchor-email img {
+  object-position: 0 calc(-2 * 46px);
+}
+
+#anchor-instagram img {
+  object-position: 0 calc(-3 * 46px);
+}
