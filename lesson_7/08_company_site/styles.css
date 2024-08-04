@@ -72,7 +72,7 @@ main {
   background-color: #fcfcfc;
   grid-area: main;
   place-self: stretch;
-  padding: 5.5em 0 4em 0;
+  padding-top: 5.5em;
   display: grid;
   grid-template-areas:
     "section1"
@@ -107,6 +107,8 @@ main section {
 
 main section:last-of-type {
   grid-area: section2;
+  margin-bottom: 4em;
+}
 }
 
 main h2::before,
