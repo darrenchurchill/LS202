@@ -2,35 +2,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 html {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: Avenir, Helvetica, "Nunito Sans", sans-serif;
   font-size: 20px;
-  color: #030303;
+  font-weight: 500;
+  color: #44484c;
 }
 
 body {
   background-image: url("images/bg_body.gif");
+  background-position: center 0;
   background-color: #2f283f;
   background-repeat: repeat;
-  width: 1000px;
-  margin: 0 auto 100px auto;
+  width: 100%;
   display: grid;
   grid-template-areas:
     "header"
     "main"
     "footer";
-  grid-template-rows: 500px 715px 115px;
+  grid-template-rows: 570px auto 300px;
   place-items: center;
 }
 
 header {
   grid-area: header;
   align-self: end;
-  margin-bottom: 90px;
+  width: 440px;
+  margin-top: 3.5em;
+  margin-bottom: 2em;
+}
+
+nav a {
+  color: #c8c8c8;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.3em;
+}
+
+nav a.active {
+  color: #6cb7fd;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 5.7em;
 }
 
 h2 {
   font-size: 1.87rem;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.8em;
   /* Create a flex container for laying out ::before and ::after content */
   display: flex;
   justify-content: center;
@@ -40,32 +60,44 @@ h2 {
 
 h3 {
   font-size: 1.2rem;
-  color: #3d96b0;
-  margin-bottom: 1em;
+  color: #3d58b0;
+  margin-bottom: 0.7em;
+}
+
+a {
+  color: inherit;
 }
 
 main {
   background-color: #fcfcfc;
-  color: #2f283f;
   grid-area: main;
-  align-self: stretch;
-  padding: 1.3em 4.5em 0 4.5em;
+  place-self: stretch;
+  padding: 5.5em 0 4em 0;
   display: grid;
   grid-template-areas:
     "section1"
     "section2";
+  grid-template-columns: min(90vw, 820px);
+  row-gap: 3em;
+  justify-content: center;
   place-items: center;
   text-align: center;
 }
 
 footer {
   background-color: #e5e5e5;
+  color: #b0b0b0;
   grid-area: footer;
   place-self: stretch;
   display: grid;
   grid-template-areas:
-    ". contactlinks .";
-  grid-template-columns: auto 400px auto;
+    ". . ."
+    ". footertext ."
+    ". contactlinks ."
+    ". . ." ;
+  grid-template-columns: auto 555px auto;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  row-gap: 2em;
   align-items: center;
 }
 
@@ -83,10 +115,21 @@ main h2::after {
   font-size: 0.7em;
 }
 
+footer p {
+  grid-area: footertext;
+  text-align: center;
+  text-wrap: balance;
+  padding: 0 10px;
+}
+
+header ul,
 footer ul {
-  grid-area: contactlinks;
   display: flex;
   justify-content: space-between;
+}
+
+footer ul {
+  grid-area: contactlinks;
 }
 
 a.socialbtn img {
