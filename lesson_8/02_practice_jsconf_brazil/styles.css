@@ -93,6 +93,20 @@ footer {
   grid-area: sponsors;
 }
 
+a.button {
+  display: inline-block;
+  background-color: #007f01;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 0.6em;
+  padding: 0.65em 1.85em 0.6em 1.85em;
+}
+
+a.button:hover {
+  background-color: #015f00;
+}
+
 .hoverbio {
   display: none;
 }
