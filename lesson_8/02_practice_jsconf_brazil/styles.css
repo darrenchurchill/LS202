@@ -1,1 +1,82 @@
 @import url("whitespace-reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+html {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  color: #434343;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  row-gap: 3.7em;
+}
+
+header {
+  color: white;
+  grid-area: header;
+  background-image: url("images/front.jpg");
+  background-position: 50% 50%;
+  background-size: 360%;
+  background-repeat: no-repeat;
+}
+
+header img {
+  margin: 5.6em 0 -0.05em 0;
+  width: 80px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-areas:
+    "tickets"
+    "speakers"
+    "schedule"
+    "location"
+    "callforpapers"
+    "sponsors";
+  place-items: center;
+  row-gap: 8em;
+}
+
+footer {
+  grid-area: footer;
+}
+
+#tickets {
+  grid-area: tickets;
+}
+
+#speakers {
+  grid-area: speakers;
+}
+
+#schedule {
+  grid-area: schedule;
+}
+
+#location {
+  grid-area: location;
+}
+
+#callforpapers {
+  grid-area: callforpapers
+}
+
+#sponsors {
+  grid-area: sponsors;
+}
+
