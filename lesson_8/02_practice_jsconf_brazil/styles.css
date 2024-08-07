@@ -80,3 +80,6 @@ footer {
   grid-area: sponsors;
 }
 
+.hoverbio {
+  display: none;
+}
