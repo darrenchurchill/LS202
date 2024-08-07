@@ -45,6 +45,12 @@ h1 {
   font-weight: normal;
 }
 
+h2 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 0.65em;
+}
+
 main {
   grid-area: main;
   display: grid;
