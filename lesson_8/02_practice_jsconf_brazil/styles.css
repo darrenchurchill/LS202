@@ -15,7 +15,6 @@ body {
     "header"
     "main"
     "footer";
-  row-gap: 3.7em;
 }
 
 header {
@@ -61,8 +60,12 @@ main {
     "location"
     "callforpapers"
     "sponsors";
-  place-items: center;
-  row-gap: 8em;
+  place-items: center stretch;
+}
+
+section {
+  border-bottom: 1px solid #ededed;
+  padding: 3.75em 0 4.25em 0;
 }
 
 footer {
