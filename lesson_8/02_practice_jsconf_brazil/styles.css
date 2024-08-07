@@ -75,7 +75,7 @@ main {
     "location"
     "callforpapers"
     "sponsors";
-  place-items: center stretch;
+  place-items: center;
 }
 
 main > section {
@@ -102,8 +102,15 @@ footer {
   grid-area: footer;
 }
 
+section[id] {
+  margin: 0 auto;
+  width: calc(100% - 4em);
+}
+
 #tickets {
   grid-area: tickets;
+  place-self: center stretch;
+  width: 100%;
 }
 
 #speakers {
