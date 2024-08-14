@@ -104,7 +104,7 @@ footer {
 
 section[id] {
   margin: 0 auto;
-  width: calc(100% - 4em);
+  width: calc(100% - 3.8em);
 }
 
 #tickets {
@@ -237,6 +237,20 @@ schedule a {
 
 #location {
   grid-area: location;
+}
+
+#location address,
+#location p {
+  text-align: left;
+  line-height: 1.6em;
+}
+
+#location address:first-of-type {
+  font-weight: bold;
+}
+
+#location p {
+  margin-top: 1em;
 }
 
 #callforpapers {
