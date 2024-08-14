@@ -240,7 +240,8 @@ schedule a {
 }
 
 #location address,
-#location p {
+#location p,
+#callforpapers p {
   text-align: left;
   line-height: 1.6em;
 }
@@ -249,12 +250,26 @@ schedule a {
   font-weight: bold;
 }
 
-#location p {
+#location p,
+#callforpapers p {
   margin-top: 1em;
 }
 
 #callforpapers {
-  grid-area: callforpapers
+  grid-area: callforpapers;
+  padding-bottom: 5em;
+  border-bottom: none;
+}
+
+#callforpapers a {
+  font-weight: bold;
+}
+
+#callforpapers a.button {
+  display: block;
+  text-align: left;
+  width: max-content;
+  margin-bottom: -0.5em;
 }
 
 #sponsors {
