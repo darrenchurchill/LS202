@@ -160,6 +160,81 @@ ul li:hover .hoverbio {
   grid-area: schedule;
 }
 
+#schedule ol {
+  border-bottom: 1px solid #ededed;
+}
+
+#schedule > ol > li {
+  border-top: 1px solid #ededed;
+  padding: 0.65em 0.65em 0.65em 0.6em;
+  display: grid;
+  grid-template-areas:
+    "speakerimage eventtime"
+    "eventtitle eventtitle"
+    "speakername speakername";
+  grid-template-rows: 66px auto 0.8em;
+  grid-template-columns: 80px 1fr;
+  row-gap: 0.4em;
+  justify-items: left;
+  text-align: left;
+}
+
+#schedule li.talk {
+  grid-template-rows: 66px auto auto;
+}
+
+schedule a {
+  grid-area: speakerimage;
+}
+
+#schedule img {
+  display: block;
+  height: 100%;
+}
+
+#schedule li > section {
+  grid-area: eventtitle;
+}
+
+#schedule h3 {
+  display: inline-block;
+  vertical-align: middle;
+  color: #434343;
+  font-weight: normal;
+  margin-right: 0.4em;
+  margin-bottom: 0;
+}
+
+#schedule h4 {
+  grid-area: speakername;
+  color: #007f01;
+  font-size: 1.13em;
+  font-weight: bold;
+  margin-top: 0.1em;
+}
+
+#schedule ul.tags {
+  display: inline;
+}
+
+#schedule ul.tags li {
+  display: inline-block;
+  font-size: 45%;
+  vertical-align: middle;
+  color: black;
+  background-color: #ececec;
+  border: 1px solid #a8a8a8;
+  padding: 0.1em 0.5em;
+}
+
+#schedule li > p {
+  grid-area: eventtime;
+  justify-self: right;
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin: 0.4em;
+}
+
 #location {
   grid-area: location;
 }
