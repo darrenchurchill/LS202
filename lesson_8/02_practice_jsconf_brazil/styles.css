@@ -274,6 +274,46 @@ schedule a {
 
 #sponsors {
   grid-area: sponsors;
+  width: calc(100% - 1.25em);
+  border-top: 1px solid #ededed;
+}
+
+#sponsors h2 {
+  margin-bottom: 0.6em;
+}
+
+#sponsors h3 {
+  color: #434343;
+  font-weight: 600;
+  font-size: 1.13rem;
+  text-align: left;
+}
+
+#sponsors ul {
+  display: grid;
+  grid-auto-columns: 300px;
+  grid-template-columns: 300px;
+  row-gap: 0.1em;
+  place-items: start left;
+  margin-bottom: 2em;
+}
+
+#sponsors ul:last-of-type {
+  margin-bottom: 0.5em;
+}
+
+#sponsors ul.sponsorssilver {
+  grid-auto-columns: 240px;
+  grid-template-columns: 240px;
+}
+
+#sponsors ul.sponsorssupport {
+  grid-auto-columns: 180px;
+  grid-template-columns: 180px;
+}
+
+#sponsors img {
+  width: 100%;
 }
 
 a.button {
