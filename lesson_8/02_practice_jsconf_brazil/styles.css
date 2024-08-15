@@ -339,26 +339,31 @@ schedule a {
 }
 
 #sponsors ul {
-  display: grid;
-  grid-auto-columns: 300px;
-  grid-template-columns: 300px;
+  display: flex;
+  flex-wrap: wrap;
   row-gap: 0.1em;
-  place-items: start left;
+  column-gap: 44px;
   margin-bottom: 2em;
+}
+
+#sponsors ul:first-of-type {
+  column-gap: 0;
 }
 
 #sponsors ul:last-of-type {
   margin-bottom: 0.5em;
 }
 
-#sponsors ul.sponsorssilver {
-  grid-auto-columns: 240px;
-  grid-template-columns: 240px;
+#sponsors li {
+  width: 300px;
 }
 
-#sponsors ul.sponsorssupport {
-  grid-auto-columns: 180px;
-  grid-template-columns: 180px;
+#sponsors .sponsorssilver li {
+  width: 240px;
+}
+
+#sponsors .sponsorssupport li {
+  width: 180px;
 }
 
 #sponsors img {
