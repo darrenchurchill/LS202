@@ -390,6 +390,7 @@ ul li:hover .hoverbio {
 #sponsors ul {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   row-gap: 0.1em;
   column-gap: 44px;
   margin-bottom: 2em;
