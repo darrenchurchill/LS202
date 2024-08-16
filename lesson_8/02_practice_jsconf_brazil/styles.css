@@ -455,6 +455,14 @@ a.button:hover {
     font-size: 1.93em;
   }
 
+  footer {
+    grid-template-rows: 7.7em auto;
+  }
+
+  footer h2 {
+    font-size: 3em;
+  }
+
   #schedule > ol > li {
     grid-template-areas:
       "eventtime eventtitle speakerimage"
