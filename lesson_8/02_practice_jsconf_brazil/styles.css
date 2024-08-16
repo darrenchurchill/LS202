@@ -184,6 +184,12 @@ section[id] {
   width: calc(100% - 3.8em);
 }
 
+section[id] > * {
+  max-width: 957px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #tickets {
   grid-area: tickets;
   place-self: center stretch;
@@ -194,7 +200,7 @@ section[id] {
   width: calc(100% - 10px);
 }
 
-#speakers ul {
+#speakers > ul {
   display: flex;
   max-width: 1000px;
   margin: auto;
@@ -352,7 +358,7 @@ ul li:hover .hoverbio {
   display: block;
   text-align: left;
   width: max-content;
-  margin-bottom: -0.5em;
+  margin: -0.5em 0;
 }
 
 #sponsors {
