@@ -84,8 +84,10 @@ main > section {
 }
 
 figure {
+  box-sizing: border-box;
   border: 1px solid #ededed;
-  height: 100%;
+  width: 282px;
+  height: 379px;
   display: grid;
   grid-template-areas:
     "image"
@@ -167,18 +169,23 @@ section[id] {
 }
 
 #speakers ul {
-  display: grid;
-  grid-template-columns: 282px;
-  grid-template-rows: 381px;
-  grid-auto-rows: 381px;
-  place-items: stretch center;
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
+  flex-wrap: wrap;
+  place-items: center;
   justify-content: center;
-  row-gap: 0.6em;
+  row-gap: 0.65em;
+  column-gap: 0.85em;
   padding-top: 0.2em;
 }
 
 #speakers li {
   position: relative;
+}
+
+#speakers img {
+  width: 100%;
 }
 
 ul li:hover .hoverbio {
