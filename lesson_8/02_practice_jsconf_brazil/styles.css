@@ -497,4 +497,9 @@ a.button:hover {
     height: unset;
     width: 100%;
   }
+
+  #sponsors,
+  #speakers {
+    width: calc(100% - 3.7em);
+  }
 }
