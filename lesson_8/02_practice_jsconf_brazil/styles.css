@@ -167,6 +167,11 @@ footer section {
   text-align: left;
 }
 
+footer section > * {
+  max-width: 957px;
+  margin: auto;
+}
+
 footer hgroup {
   margin-bottom: 1.1em;
 }
