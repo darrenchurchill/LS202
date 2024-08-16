@@ -79,7 +79,7 @@ main {
 }
 
 main > section {
-  border-bottom: 1px solid #ededed;
+  border-top: 1px solid #ededed;
   padding: 3.75em 0 4.25em 0;
 }
 
@@ -159,11 +159,11 @@ section[id] {
 #tickets {
   grid-area: tickets;
   place-self: center stretch;
-  width: 100%;
 }
 
 #speakers {
   grid-area: speakers;
+  width: calc(100% - 10px);
 }
 
 #speakers ul {
