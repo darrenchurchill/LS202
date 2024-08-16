@@ -161,7 +161,7 @@ footer h3 {
 
 footer section {
   grid-area: footermain;
-  align-self: start;
+  place-self: start stretch;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 0.65em 0.65em 1.1em 0.65em;
   text-align: left;
