@@ -220,6 +220,10 @@ section[id] > * {
   width: 100%;
 }
 
+#speakers hgroup p {
+  line-height: 1.6em;
+}
+
 ul li:hover .hoverbio {
   display: block;
 }
