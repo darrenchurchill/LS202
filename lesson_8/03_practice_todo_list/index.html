@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Todo List</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <input id="menu-toggle" name="menu-toggle" type="checkbox">
+    <label for="menu-toggle">Menu</label>
+
+    <nav>
+      <section class="nav-all">
+        <hgroup>
+          <h2><a href="#">All Todos</a></h2>
+          <p class="num-incomplete">18</p>
+        </hgroup>
+        <ol>
+          <li class="selected">
+            <a href="#">02/16</a>
+            <p class="num-incomplete">8</p>
+          </li>
+          <li>
+            <a href="#">03/16</a>
+            <p class="num-incomplete">2</p>
+          </li>
+          <li>
+            <a href="#">04/16</a>
+            <p class="num-incomplete">1</p>
+          </li>
+          <li>
+            <a href="#">05/16</a>
+            <p class="num-incomplete">1</p>
+          </li>
+          <li>
+            <a href="#">06/16</a>
+            <p class="num-incomplete">6</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="nav-completed">
+        <hgroup>
+          <h2><a href="#">Completed</a></h2>
+        </hgroup>
+        <ol>
+          <li class="completed"><a href="#">02/15</a></li>
+          <li class="completed"><a href="#">03/15</a></li>
+          <li class="completed"><a href="#">04/15</a></li>
+          <li class="completed"><a href="#">05/15</a></li>
+          <li class="completed"><a href="#">06/14</a></li>
+        </ol>
+      </section>
+    </nav>
+  </header>
+
+  <main>
+    <header>
+      <hgroup>
+        <h1>02/16</h1>
+        <p class="num-incomplete">8</p>
+      </hgroup>
+    </header>
+
+
+    <ul>
+      <li>
+        <label>Add new to do</label>
+      </li>
+      <li class="todo-incomplete">
+        <form action="#" method="post">
+          <button type="submit" name="toggle-complete">Mark As Complete</button>
+          <label for="modal-item-1">Item 1</label>
+          <button type="submit" name="delete">Delete</button>
+        </form>
+      </li>
+      <li class="todo-incomplete">
+        <form action="#" method="post">
+          <button type="submit" name="toggle-complete">Mark As Complete</button>
+          <label>Item 2</label>
+          <button type="submit" name="delete">Delete</button>
+        </form>
+      </li>
+      <li class="todo-complete">
+        <form action="#" method="post">
+          <button type="submit" name="toggle-complete">Mark As Incomplete</button>
+          <label>Item 3</label>
+          <button type="submit" name="delete">Delete</button>
+        </form>
+      </li>
+      <li class="todo-complete">
+        <form action="#" method="post">
+          <button type="submit" name="toggle-complete">Mark As Incomplete</button>
+          <label>Item 4</label>
+          <button type="submit" name="delete">Delete</button>
+        </form>
+      </li>
+      <li class="todo-complete">
+        <form action="#" method="post">
+          <button type="submit" name="toggle-complete">Mark As Incomplete</button>
+          <label>Item 5</label>
+          <button type="submit" name="delete">Delete</button>
+        </form>
+      </li>
+      <li class="todo-incomplete">
+        <form action="#" method="post">
+          <button type="submit" name="toggle-complete">Mark As Complete</button>
+          <label>Item 6</label>
+          <button type="submit" name="delete">Delete</button>
+        </form>
+      </li>
+      <li class="todo-incomplete">
+        <form action="#" method="post">
+          <button type="submit" name="toggle-complete">Mark As Complete</button>
+          <label>Item 7</label>
+          <button type="submit" name="delete">Delete</button>
+        </form>
+      </li>
+      <li class="todo-incomplete">
+        <form action="#" method="post">
+          <button type="submit" name="toggle-complete">Mark As Complete</button>
+          <label>Item 8</label>
+          <button type="submit" name="delete">Delete</button>
+        </form>
+      </li>
+      <li class="todo-incomplete">
+        <form action="#" method="post">
+          <button type="submit" name="toggle-complete">Mark As Complete</button>
+          <label>Item 9</label>
+          <button type="submit" name="delete">Delete</button>
+        </form>
+      </li>
+    </ul>
+
+    <input type="checkbox" id="modal-item-1">
+    <form action="#" method="post">
+      <label>
+        Title
+        <input type="text" value="Item 1">
+      </label>
+      <label>Due Date</label>
+      <select name="date-day" required>
+        <option value="">Day</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+        <option>13</option>
+        <option>14</option>
+        <option>15</option>
+        <option>16</option>
+        <option>17</option>
+        <option>18</option>
+        <option>19</option>
+        <option>20</option>
+        <option>21</option>
+        <option>22</option>
+        <option>23</option>
+        <option>24</option>
+        <option>25</option>
+        <option>26</option>
+        <option>27</option>
+        <option>28</option>
+        <option>29</option>
+        <option>30</option>
+        <option>31</option>
+      </select>
+      /
+      <select name="date-month" required>
+        <option value="">Month</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+      </select>
+      /
+      <select name="date-year" required>
+        <option value="">Year</option>
+        <option>2020</option>
+        <option>2021</option>
+        <option>2022</option>
+        <option>2023</option>
+        <option>2024</option>
+        <option>2025</option>
+      </select>
+
+      <label>
+        Description
+        <textarea name="description" placeholder="Description"></textarea>
+      </label>
+
+      <button type="submit">Save</button>
+      <button type="submit" name="mark-complete">Mark As Complete</button>
+    </form>
+  </main>
+</body>
+</html>
