@@ -7,50 +7,59 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <input id="menu-toggle" name="menu-toggle" type="checkbox">
-    <label for="menu-toggle">Menu</label>
+  <input id="menu-toggle" name="menu-toggle" type="checkbox">
 
+  <header>
     <nav>
-      <section class="nav-all">
+      <section id="nav-all">
         <hgroup>
           <h2><a href="#">All Todos</a></h2>
           <p class="num-incomplete">18</p>
         </hgroup>
         <ol>
           <li class="selected">
-            <a href="#">02/16</a>
-            <p class="num-incomplete">8</p>
+            <a href="#">
+              <p class="list-date">02/16</p>
+              <p class="num-incomplete">8</p>
+            </a>
           </li>
           <li>
-            <a href="#">03/16</a>
-            <p class="num-incomplete">2</p>
+            <a href="#">
+              <p class="list-date">03/16</p>
+              <p class="num-incomplete">2</p>
+            </a>
           </li>
           <li>
-            <a href="#">04/16</a>
-            <p class="num-incomplete">1</p>
+            <a href="#">
+              <p class="list-date">04/16</p>
+              <p class="num-incomplete">1</p>
+            </a>
           </li>
           <li>
-            <a href="#">05/16</a>
-            <p class="num-incomplete">1</p>
+            <a href="#">
+              <p class="list-date">05/16</p>
+              <p class="num-incomplete">1</p>
+            </a>
           </li>
           <li>
-            <a href="#">06/16</a>
-            <p class="num-incomplete">6</p>
+            <a href="#">
+              <p class="list-date">06/16</p>
+              <p class="num-incomplete">6</p>
+            </a>
           </li>
         </ol>
       </section>
 
-      <section class="nav-completed">
+      <section id="nav-completed">
         <hgroup>
           <h2><a href="#">Completed</a></h2>
         </hgroup>
         <ol>
-          <li class="completed"><a href="#">02/15</a></li>
-          <li class="completed"><a href="#">03/15</a></li>
-          <li class="completed"><a href="#">04/15</a></li>
-          <li class="completed"><a href="#">05/15</a></li>
-          <li class="completed"><a href="#">06/14</a></li>
+          <li class="completed"><a href="#"><p class="list-date">02/15</p></a></li>
+          <li class="completed"><a href="#"><p class="list-date">03/15</p></a></li>
+          <li class="completed"><a href="#"><p class="list-date">04/15</p></a></li>
+          <li class="completed"><a href="#"><p class="list-date">05/15</p></a></li>
+          <li class="completed"><a href="#"><p class="list-date">06/14</p></a></li>
         </ol>
       </section>
     </nav>
@@ -58,6 +67,7 @@
 
   <main>
     <header>
+      <label for="menu-toggle">Menu</label>
       <hgroup>
         <h1>02/16</h1>
         <p class="num-incomplete">8</p>
