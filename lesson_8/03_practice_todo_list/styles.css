@@ -4,6 +4,7 @@ html {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: 300;
+  color: #060606
 }
 
 body {
@@ -13,9 +14,16 @@ body {
   grid-template-columns: 335px 1fr;
 }
 
+h1 {
+  font-size: 1.25em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
 h1, h2 {
   font-weight: 300;
-  font-size: 1.2em;
 }
 
 body > header,
@@ -45,13 +53,12 @@ body > header {
 }
 
 label[for="menu-toggle"] {
-  background-image: url("images/hamburger.png");
-  background-repeat: no-repeat;
-  background-size: contain;
+  background: url("images/hamburger.png") no-repeat center/contain;
   position: absolute;
-  top: 35px;
+  top: 25px;
   text-indent: -9999px;
   width: 25px;
+  height: 20px;
 }
 
 label[for="menu-toggle"]:hover {
@@ -61,6 +68,8 @@ label[for="menu-toggle"]:hover {
 main {
   grid-area: main;
   background-color: #fff;
+  padding-left: 20px;
+  padding-right: 100px;
 }
 
 nav a {
@@ -96,17 +105,22 @@ nav p.list-date {
   display: inline-block;
 }
 
-nav p.num-incomplete {
+p.num-incomplete {
   grid-area: count;
   display: inline-block;
-  justify-self: end;
   background-color: #6b7292;
   padding: 0 5px 0 5px;
   border-radius: 10px;
 }
 
-nav li.selected p.num-incomplete {
+nav p.num-incomplete {
+  justify-self: end;
+}
+
+nav li.selected p.num-incomplete,
+main p.num-incomplete {
   background-color: #148fd5;
+  color: #fff;
 }
 
 nav h2 {
@@ -139,3 +153,100 @@ nav h2 a {
 #nav-completed li {
   text-decoration: line-through;
 }
+
+main header {
+  margin-bottom: 1.7em;
+}
+
+main header,
+.todo-list li {
+  padding-left: 10px;
+}
+
+main hgroup {
+  display: grid;
+  padding-top: 10px;
+  grid-template-areas:
+    "heading num-incomplete";
+  grid-template-columns: auto 1fr;
+  place-items: center left;
+  column-gap: 1.5em;
+}
+
+main h1 {
+  grid-area: heading;
+}
+
+main p.num-incomplete {
+  grid-area: num-incomplete;
+}
+
+.todo-list li {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.todo-list li:last-child {
+  border: none;
+}
+
+.todo-list li:first-child label,
+.todo-list form {
+  display: grid;
+  grid-template-areas:
+    "toggle-complete todo-title delete";
+  grid-template-columns: auto 1fr auto;
+  column-gap: 1em;
+}
+
+.todo-list li:first-child {
+  color: #148fd5;
+  background: url("images/plus.png") no-repeat center left content-box;
+  text-indent: calc(14px + 1em);
+}
+
+.todo-list li:first-child label:hover,
+.todo-list form > *:hover {
+  cursor: pointer;
+  color: #148fd5;
+}
+
+.todo-list form label {
+  grid-area: todo-title;
+}
+
+.todo-list button {
+  text-indent: -9999px;
+  appearance: none;
+  border: none;
+  background: transparent no-repeat;
+}
+
+.todo-complete {
+  text-decoration: line-through;
+  color: #b3b3b3;
+}
+
+button[name="toggle-complete"] {
+  grid-area: toggle-complete;
+  width: 14px;
+  height: 14px;
+}
+
+.todo-incomplete button[name="toggle-complete"] {
+  background-image: url("images/unticked-box.png");
+}
+
+.todo-complete button[name="toggle-complete"] {
+  background-image: url("images/ticked-box.png");
+}
+
+button[name="delete"] {
+  grid-area: delete;
+  justify-self: right;
+  background-image: url("images/trash.png");
+  width: 16px;
+  height: 17px;
+}
+
