@@ -253,3 +253,17 @@ button[name="delete"] {
   height: 17px;
 }
 
+@media screen and (min-width: 769px) {
+  label[for="menu-toggle"] {
+    display: none;
+  }
+
+  body > header {
+    display: block;
+    grid-area: header;
+  }
+
+  main {
+    grid-area: main;
+  }
+}
