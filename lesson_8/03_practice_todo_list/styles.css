@@ -32,6 +32,7 @@ main {
 }
 
 body > header {
+  display: none;
   grid-area: header;
   box-sizing: border-box;
   height: 100%;
@@ -44,12 +45,12 @@ body > header {
   display: none;
 }
 
-#menu-toggle ~ header {
+#menu-toggle:checked + header {
   display: block;
 }
 
-#menu-toggle:checked ~ header {
-  display: none;
+#menu-toggle:checked ~ main {
+  grid-area: main;
 }
 
 label[for="menu-toggle"] {
@@ -66,7 +67,9 @@ label[for="menu-toggle"]:hover {
 }
 
 main {
-  grid-area: main;
+  grid-column-start: header-start;
+  grid-column-end: main-end;
+  position: relative;
   background-color: #fff;
   padding-left: 20px;
   padding-right: 100px;
