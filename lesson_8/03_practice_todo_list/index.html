@@ -145,81 +145,88 @@
     </ul>
 
     <input type="checkbox" id="modal-item-1">
-    <form action="#" method="post">
-      <label>
-        Title
-        <input type="text" value="Item 1">
-      </label>
-      <label>Due Date</label>
-      <select name="date-day" required>
-        <option value="">Day</option>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-        <option>6</option>
-        <option>7</option>
-        <option>8</option>
-        <option>9</option>
-        <option>10</option>
-        <option>11</option>
-        <option>12</option>
-        <option>13</option>
-        <option>14</option>
-        <option>15</option>
-        <option>16</option>
-        <option>17</option>
-        <option>18</option>
-        <option>19</option>
-        <option>20</option>
-        <option>21</option>
-        <option>22</option>
-        <option>23</option>
-        <option>24</option>
-        <option>25</option>
-        <option>26</option>
-        <option>27</option>
-        <option>28</option>
-        <option>29</option>
-        <option>30</option>
-        <option>31</option>
-      </select>
-      /
-      <select name="date-month" required>
-        <option value="">Month</option>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-        <option>6</option>
-        <option>7</option>
-        <option>8</option>
-        <option>9</option>
-        <option>10</option>
-        <option>11</option>
-        <option>12</option>
-      </select>
-      /
-      <select name="date-year" required>
-        <option value="">Year</option>
-        <option>2020</option>
-        <option>2021</option>
-        <option>2022</option>
-        <option>2023</option>
-        <option>2024</option>
-        <option>2025</option>
-      </select>
+    <section class="modal">
+      <form action="#" method="post">
+        <fieldset class="modal-input-section">
+          <label for="item-1-title">Title</label>
+          <input type="text" id="item-1-title" name="title" value="Item 1">
+        </fieldset>
+        <fieldset class="modal-input-section">
+          <label>Due Date</label>
+          <select name="date-day" required>
+            <option value="" selected disabled>Day</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            <option>21</option>
+            <option>22</option>
+            <option>23</option>
+            <option>24</option>
+            <option>25</option>
+            <option>26</option>
+            <option>27</option>
+            <option>28</option>
+            <option>29</option>
+            <option>30</option>
+            <option>31</option>
+          </select>
+          <p class="date-separator">/</p>
+          <select name="date-month" required>
+            <option value="" selected disabled>Month</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+          </select>
+          <p class="date-separator">/</p>
+          <select name="date-year" required>
+            <option value="" selected disabled>Year</option>
+            <option>2020</option>
+            <option>2021</option>
+            <option>2022</option>
+            <option>2023</option>
+            <option>2024</option>
+            <option>2025</option>
+          </select>
+        </fieldset>
 
-      <label>
-        Description
-        <textarea name="description" placeholder="Description"></textarea>
-      </label>
+        <fieldset class="modal-input-section">
+          <label for="description">Description</label>
+          <textarea id="description" name="description" placeholder="Description"></textarea>
+        </fieldset>
 
-      <button type="submit">Save</button>
-      <button type="submit" name="mark-complete">Mark As Complete</button>
-    </form>
+        <fieldset class="modal-submit-section">
+          <button type="submit">Save</button>
+          <button type="submit" name="mark-complete">Mark As Complete</button>
+        </fieldset>
+      </form>
+    </section>
+
   </main>
 </body>
 </html>
